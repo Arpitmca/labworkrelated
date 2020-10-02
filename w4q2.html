@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>w4q2</title>
+		<style>
+			select {
+		display: block;
+		margin: 0 auto;
+		}
+		</style>
+	</head>
+	<body>
+		<u><h1 align="center">Select Name of Country</h1></u>
+		<select  id="cap" onchange="capcal()">
+			<option value="0">Select</option>
+			<option value="1">India</option>
+			<option value="2">USA</option>
+			<option value="3">Australia</option>
+			<option value="4">Newzeland</option>
+			<option value="5">England</option>
+		</select>
+		<h1 style="font-size: 50px;color: red;font-weight: bold;text-align: center;" id="ans"></h1>
+		<script>
+			function capcal()
+			{
+				var x=document.getElementById('cap').value;
+				
+				var y;
+				if (x==0) {
+					y="Please Select Valid Country Name";
+				}
+				else if(x == 1) {
+					y="Delhi";
+				} else if (x == 2) {
+		            y="Newyork";
+				} else if (x == 3) {
+					y="Canberra";
+				} else if (x == 4) {
+					y="Auckland";
+				} else {
+					y="London";
+				}
+				document.getElementById('ans').innerHTML=y;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>week5q1a</title>
+<style>
+	h2{
+		display: inline;
+	}
+</style>
+</head>
+
+
+<script type="text/javascript">
+
+function fib() {
+var n = prompt("Enter N: ","");
+fib1=0;
+fib2=1;
+fib=0;
+if (n>1) {
+document.write("<h1>Fibonacci series upto "+n+" term is:</h1> ")
+document.write("<h2 style=\"display:inline\">" +fib1 +",&nbsp;</h2>");
+document.write("<h2 style=\"display:inline\">" +fib2 +",&nbsp;</h2>");
+for(i=0;i<n-2;i++) {
+fib = fib1+fib2;
+fib1=fib2;
+fib2=fib;
+document.write("<h2 style=\"display:inline\">" +fib +",&nbsp;</h2>");
+}
+}
+else if (n==1) {
+document.write("<h1>Fibonacci series upto "+n+" term is:</h1> ")
+document.write("<h2>" +fib1 +"</h2>");
+}
+else{
+	document.write("<h2>Wrong Input</h2>")
+}
+}
+document.getElementsBy
+</script>
+<body onload="fib()">
+</body>
+</html>

@@ -1,0 +1,38 @@
+MCA {
+font-family: "lucida calligraphy", arial, 'sans serif';
+margin-left: 10pt;
+background-color:rgb(200,255,205);
+display: block;
+}
+Enrolment {
+font-size: 10pt;
+background-color:rgb(100,255,105);
+}
+name {
+color:blue;
+font-size: 20pt;
+font-style: italic;
+font-weight: bold;
+}
+department {
+color:red;
+font-size: 20pt;
+font-style: italic;
+font-weight: bold;
+}
+semester {
+
+font-size: 20pt;
+font-style: italic;
+}
+YOJ
+{
+padding: 0.5cm;
+}
+email
+{
+color:green;
+font-size: 20pt;
+font-style: italic;
+font-weight: bold;
+}

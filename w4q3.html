@@ -1,0 +1,26 @@
+<html lang="en">
+	<head>
+		
+		<title>w4q3</title>
+	</head>
+	<body>
+		<h1>Enter A String</h1>
+		<input type="text" id="a">&nbsp;
+		<button onclick="check()">Check</button><br>
+		<span id="b" style="color: green;"></span>
+		<h1>Enter A Email Id</h1>
+		<input type="text" id="d" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+		<script>
+				function check() {
+				var x=document.getElementById('a').value;
+		var y=x.charCodeAt(0);
+		if (y > 64 && y < 91) {
+					document.getElementById('b').innerHTML="First letter in uppercase";
+				}
+				else {
+					document.getElementById('b').innerHTML="First letter is not in uppercase";
+				}
+			}
+		</script>
+	</body>
+</html>

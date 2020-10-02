@@ -1,0 +1,68 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>w4q4</title>
+		<style>
+			button{
+				background-color: black;
+				border:none;
+				color: white;
+				padding: 10px;
+				display: inline-block;
+				border-radius: 12px;
+				text-decoration: none;
+				font-size: 16px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Get your average and grade here</h1>
+		<h2>Enter your Math Marks</h2>
+		<input type="number" id="a" >
+		<h2>Enter your Science Marks</h2>
+		<input type="number" id="b">
+		<h2>Enter your Social Science Marks</h2>
+		<input type="number" id="c">
+		<h2>Enter your English Marks</h2>
+		<input type="number" id="d">
+		<h2>Enter your Hindi Marks</h2>
+		<input type="number" id="e">
+		<h1 style="color: green;display: inline;position: relative;left: 400px;bottom: 250px;border:3px solid;padding: 5px ">your average is <span id="avg"></span> and Grade is <span id="grade"></span></h1>
+		<button onclick="res()">Click to get average and grade</button>
+		<script>
+			function res() {
+				var x=document.getElementById('a').value;
+				var y=document.getElementById('b').value;
+				var z=document.getElementById('c').value;
+				var f=document.getElementById('d').value;
+				var g=document.getElementById('e').value;
+				
+				var avg = (parseInt(x)+parseInt(y)+parseInt(z)+parseInt(f)+parseInt(g))/5;
+				document.getElementById('avg').innerHTML=avg;
+				var ans;
+				if (avg>=90) {
+		ans="A+";
+				} else if (avg>=85 && avg<90) {
+					ans="A";
+				} else if (avg>=80 && avg<85) {
+					ans="B+";
+				} else if (avg>=75 && avg<80) {
+					ans="B";
+				} else if (avg>=70 && avg<75) {
+					ans="C+";
+				} else if (avg>=65 && avg<70) {
+					ans="C";
+				} else if (avg>=60 && avg<65) {
+					ans="D+";
+				} else if (avg>=55 && avg<60) {
+					ans="D";
+				} else{
+					ans="F";
+				}
+				document.getElementById('grade').innerHTML=ans;
+			}
+		</script>
+	</body>
+</html>
