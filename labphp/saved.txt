@@ -1,0 +1,8 @@
+Name:Arpit Kumar Gupta<br> 
+Basic Pay:45000<br>
+DA:2490<br>
+HRA:380<br>
+Name:Abhay Singh<br> 
+Basic Pay:23000<br>
+DA:12356<br>
+HRA:6700<br>

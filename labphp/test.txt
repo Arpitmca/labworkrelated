@@ -1,0 +1,1 @@
+To create a php program to demonstrate the different file handling method.
